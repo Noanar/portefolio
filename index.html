@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - BTS</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -14,14 +15,21 @@
             <ul>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#experience">Expériences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <section id="home">
+        <h2>Bienvenue !</h2>
+        <p>Je suis [Ton Nom], étudiant en BTS [Spécialité]. Passionné par [Domaine], je développe des projets en [Technologies].</p>
+    </section>
+
     <section id="about">
         <h2>À propos</h2>
-        <p>Je suis un développeur passionné par le web et la création d'expériences interactives.</p>
+        <p>Actuellement en BTS [Nom du BTS], je me spécialise dans [Domaine]. J’aime résoudre des problèmes et créer des solutions innovantes.</p>
     </section>
 
     <section id="projects">
@@ -36,12 +44,27 @@
         </div>
     </section>
 
+    <section id="skills">
+        <h2>Compétences</h2>
+        <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Expériences</h2>
+        <p>Stage chez [Entreprise] - Développement Web</p>
+    </section>
+
     <section id="contact">
-        <h2>Contactez-moi</h2>
+        <h2>Contact</h2>
         <form>
-            <input type="text" placeholder="Votre nom" required>
-            <input type="email" placeholder="Votre email" required>
-            <textarea placeholder="Votre message" required></textarea>
+            <input type="text" placeholder="Nom" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
             <button type="submit">Envoyer</button>
         </form>
     </section>
@@ -50,7 +73,5 @@
         <p>© 2025 Mon Portfolio - Tous droits réservés.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
-
