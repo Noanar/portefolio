@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noa Nardot Portfolio</title>
-    <link rel="stylesheet" href="https://noanar.github.io/portefolio/style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
@@ -47,10 +47,11 @@
     <div class="extra-content" id="synthese">
         <img src="https://raw.githubusercontent.com/Noanar/portefolio/main/images/tableaudesynthese_page-0001.jpg" alt="Tableau de synthèse" class="synthese-image">
     </div>
+
     <div class="extra-content" id="competences">
-        <div class="dropdown">
-            <button class="dropdown-btn">Compétences</button>
-            <div class="dropdown-content">
+        <button class="toggle-btn" onclick="toggleCompetences()">Afficher les compétences</button>
+        <div id="competences-content" class="hidden-content">
+            <div class="competences-text">
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>JS</p>
@@ -58,17 +59,11 @@
                 <p>MySQL</p>
                 <p>Python</p>
                 <p>Linux</p>
-            </div>
-        </div>
-    
-        <div class="dropdown">
-            <button class="dropdown-btn">Langues</button>
-            <div class="dropdown-content">
-                <p>Français : langue maternelle</p>
-                <p>Anglais : niveau B1</p>
+                <p>Anglais niveau B1</p>
             </div>
         </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
