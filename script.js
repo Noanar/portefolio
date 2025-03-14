@@ -26,3 +26,12 @@ document.querySelectorAll('nav a').forEach(anchor => {
         }
     });
 });
+
+function toggleCompetences() {
+    let competencesDiv = document.getElementById("competences-content");
+    if (competencesDiv.style.display === "none" || competencesDiv.style.display === "") {
+        competencesDiv.style.display = "block";
+    } else {
+        competencesDiv.style.display = "none";
+    }
+}
