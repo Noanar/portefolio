@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    width: 250px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: gray;
+}
+
+.content {
+    position: relative;
+    margin-left: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/coding.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-text {
+    max-width: 600px;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.large-text {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: gray;
+}
+
+.profile-image {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.extra-content {
+    padding: 50px;
+    font-size: 1.2rem;
+    background-color: rgba(157, 143, 143, 0.7);
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 1.6;
+    padding-left: 50px;
+}
+
+#synthese img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#competences {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    padding: 50px;
+    background-color: rgba(157, 143, 143, 0.7);
+    text-align: right;
+}
+
+.toggle-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.hidden-content {
+    display: none;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: rgba(157, 143, 143, 0.7);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .contact-btn {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .extra-content {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    #synthese img {
+        width: 100%;
+    }
+
+    #competences {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hidden-content {
+        text-align: center;
+    }
+
+    .toggle-btn {
+        margin: 0 auto;
+    }
+}
