@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,16 +22,16 @@
         </ul>
     </nav>
     
-<div class="content">
-    <div id="particles-js"></div>
-    <div class="main-text">
-        <p class="large-text">Nardot Noa</p>
-        <p class="large-text">Étudiant à l'EPSI Lyon</p>
-        <p class="large-text">Bienvenue sur mon portfolio</p>
-        <button class="contact-btn">Contactez-moi</button>
+    <div class="content">
+        <div id="particles-js"></div>
+        <div class="main-text">
+            <p class="large-text">Nardot Noa</p>
+            <p class="large-text">Étudiant à l'EPSI Lyon</p>
+            <p class="large-text">Bienvenue sur mon portfolio</p>
+            <button class="contact-btn">Contactez-moi</button>
+        </div>
+        <img src="./images/moi.jpg" alt="Moi" class="profile-image">
     </div>
-    <img src="./images/moi.jpg" alt="Moi" class="profile-image">
-</div>
 
     <div class="extra-content" id="Profil">
         <p>Bonjour et bienvenue sur mon portfolio !</p>
@@ -49,24 +50,137 @@
     </div>
 
     <div class="extra-content" id="competences">
-        <button class="toggle-btn" onclick="toggleCompetences()">Afficher les compétences</button>
-        <div id="competences-content" class="hidden-content">
-            <div class="competences-text">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JS</p>
-                <p>PHP</p>
-                <p>MySQL</p>
-                <p>Python</p>
-                <p>Linux</p>
-                <p>Anglais niveau B1</p>
-                <p>React</p>
+        <div class="competences-wrapper">
+            <button class="toggle-btn" onclick="toggleCompetences()">Mes compétences</button>
+            <div id="competences-content" class="hidden-content">
+                <div class="competence-section">
+                    <h3>Langages</h3>
+                    <div class="competence-tableau">
+                        <div class="competence-card"><img src="./images/icones/html.png" alt="HTML">HTML</div>
+                        <div class="competence-card"><img src="./images/icones/css.png" alt="CSS">CSS</div>
+                        <div class="competence-card"><img src="./images/icones/js.png" alt="JavaScript">JavaScript</div>
+                        <div class="competence-card"><img src="./images/icones/php.png" alt="PHP">PHP</div>
+                        <div class="competence-card"><img src="./images/icones/python.png" alt="Python">Python</div>
+                        <div class="competence-card"><img src="./images/icones/csharp.png" alt="C#">C#</div>
+                    </div>
+                </div>
+
+                <div class="competence-section">
+                    <h3>Bases de données</h3>
+                    <div class="competence-tableau">
+                        <div class="competence-card"><img src="./images/icones/sql.png" alt="SQL">MySQL</div>
+                    </div>
+                </div>
+
+                <div class="competence-section">
+                    <h3>Technologies</h3>
+                    <div class="competence-tableau">
+                        <div class="competence-card"><img src="./images/icones/linux.png" alt="Linux">Linux</div>
+                        <div class="competence-card"><img src="./images/icones/reactjs.png" alt="React">React</div>
+                    </div>
+                </div>
+
+                <div class="competence-section">
+                    <h3>Langues</h3>
+                    <div class="competence-tableau">
+                        <div class="competence-card">Anglais niveau B1</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="extra-content" id="Projets">
-
+    <div class="extra-content" id="projets">
+        <h2 class="section-title">Mes projets</h2>
+        <div class="diapo">
+            <div class="elements">
+                <div class="element">
+                    <div class="slide-content">
+                        <img src="images/projets/emploidutemps.png" alt="Image 1">
+                        <div class="slide-text">
+                            <h3>Emploi du temps</h3>
+                            <p>Application web permettant de gérer les emplois du temps des étudiants avec une interface intuitive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="slide-content reverse">
+                        <div class="slide-text">
+                            <h3>Emploi du temps</h3>
+                            <p>La page qui permet de créer les évènements</p>
+                        </div>
+                        <img src="images/projets/emploidutemps2.png" alt="Image 2">
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="slide-content">
+                        <img src="images/projets/emploidutemps3.png" alt="Image 3">
+                        <div class="slide-text">
+                            <h3>Emploi du temps</h3>
+                            <p>La page de codage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/icones/fleche-gauche.png" alt="Précédent" id="nav-gauche-1" class="nav-arrow left">
+            <img src="images/icones/fleche-droite.png" alt="Suivant" id="nav-droite-1" class="nav-arrow right">
+        </div>
+        <div class="diapo">
+            <div class="elements">
+                <div class="element">
+                    <div class="slide-content">
+                        <img src="images/projets/glpi.png" alt="Image 1">
+                        <div class="slide-text">
+                            <h3>GLPI</h3>
+                            <p>Système qui permet de créer des utilisateurs et roles ainsi que mise en place d'un système de ticketing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="slide-content reverse">
+                        <div class="slide-text">
+                            <h3>GLPI</h3>
+                            <p>L'affichage du ticket</p>
+                        </div>
+                        <img src="images/projets/glpi2.png" alt="Image 2">
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="slide-content">
+                        <img src="images/projets/glpi3.png" alt="Image 3">
+                        <div class="slide-text">
+                            <h3>GLPI</h3>
+                            <p>La création du ticket</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/icones/fleche-gauche.png" alt="Précédent" id="nav-gauche-2" class="nav-arrow left">
+            <img src="images/icones/fleche-droite.png" alt="Suivant" id="nav-droite-2" class="nav-arrow right">
+        </div>
+        <div class="diapo">
+            <div class="elements">
+                <div class="element">
+                    <div class="slide-content">
+                        <img src="images/projets/epsipoly.png" alt="Image 1">
+                        <div class="slide-text">
+                            <h3>Jeu de société</h3>
+                            <p>Interface d'un jeu de société avec question et réponse </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="slide-content reverse">
+                        <div class="slide-text">
+                            <h3>Jeu de société</h3>
+                            <p>Équipé d'un dé en ligne aléatoire et d'un compteur de points</p>
+                        </div>
+                        <img src="images/projets/epsipoly2.png" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+            <img src="images/icones/fleche-gauche.png" alt="Précédent" id="nav-gauche-3" class="nav-arrow left">
+            <img src="images/icones/fleche-droite.png" alt="Suivant" id="nav-droite-3" class="nav-arrow right">
+        </div>
     </div>
 
     <script src="./script.js" defer></script>

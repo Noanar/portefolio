@@ -17,7 +17,7 @@ particlesJS("particles-js", {
     }
 });
 
-
+// Scroll vers le haut si lien "#"
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(event) {
         if (this.getAttribute('href') === '#') {
@@ -27,6 +27,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+// Affichage des compétences
 function toggleCompetences() {
     let competencesDiv = document.getElementById("competences-content");
     if (competencesDiv.style.display === "none" || competencesDiv.style.display === "") {
@@ -35,3 +36,33 @@ function toggleCompetences() {
         competencesDiv.style.display = "none";
     }
 }
+
+document.querySelectorAll('.diapo').forEach((diapo, index) => {
+    let compteur = 0;
+    const elements = diapo.querySelector('.elements');
+    const slides = elements.querySelectorAll('.element');
+    const slideWidth = diapo.clientWidth;
+
+    const navGauche = document.getElementById(`nav-gauche-${index + 1}`);
+    const navDroite = document.getElementById(`nav-droite-${index + 1}`);
+
+    function updateSlidePosition() {
+        const decal = -slideWidth * compteur;
+        elements.style.transform = `translateX(${decal}px)`;
+    }
+
+    function slideNext() {
+        compteur++;
+        if (compteur >= slides.length) compteur = 0;
+        updateSlidePosition();
+    }
+
+    function slidePrev() {
+        compteur--;
+        if (compteur < 0) compteur = slides.length - 1;
+        updateSlidePosition();
+    }
+
+    navDroite.addEventListener('click', slideNext);
+    navGauche.addEventListener('click', slidePrev);
+});
