@@ -325,3 +325,7 @@ html {
 .nav-arrow.right {
     right: 10px;
 }
+
+.texte-droite .slide-content {
+    flex-direction: row-reverse;
+}
