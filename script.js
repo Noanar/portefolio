@@ -41,28 +41,30 @@ document.querySelectorAll('.diapo').forEach((diapo, index) => {
     let compteur = 0;
     const elements = diapo.querySelector('.elements');
     const slides = elements.querySelectorAll('.element');
-    const slideWidth = diapo.clientWidth;
+
+    const getSlideWidth = () => diapo.clientWidth;
 
     const navGauche = document.getElementById(`nav-gauche-${index + 1}`);
     const navDroite = document.getElementById(`nav-droite-${index + 1}`);
 
     function updateSlidePosition() {
-        const decal = -slideWidth * compteur;
+        const decal = -getSlideWidth() * compteur;
         elements.style.transform = `translateX(${decal}px)`;
     }
 
     function slideNext() {
-        compteur++;
-        if (compteur >= slides.length) compteur = 0;
+        compteur = (compteur + 1) % slides.length;
         updateSlidePosition();
     }
 
     function slidePrev() {
-        compteur--;
-        if (compteur < 0) compteur = slides.length - 1;
+        compteur = (compteur - 1 + slides.length) % slides.length;
         updateSlidePosition();
     }
 
     navDroite.addEventListener('click', slideNext);
     navGauche.addEventListener('click', slidePrev);
+    window.addEventListener('resize', updateSlidePosition);
 });
+
+
