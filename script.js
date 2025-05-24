@@ -44,8 +44,8 @@ document.querySelectorAll('.diapo').forEach((diapo, index) => {
 
     const getSlideWidth = () => diapo.clientWidth;
 
-    const navGauche = document.getElementById(`nav-gauche-${index + 1}`);
-    const navDroite = document.getElementById(`nav-droite-${index + 1}`);
+    const navGauche = diapo.querySelector('.nav-arrow.left');
+    const navDroite = diapo.querySelector('.nav-arrow.right');
 
     function updateSlidePosition() {
         const decal = -getSlideWidth() * compteur;
