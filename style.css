@@ -240,10 +240,6 @@ html {
  font-size: 1rem;
 }
 
-.competence-card:hover {
- transform: translateY(-5px);
- background-color: #333;
-}
 
 .competence-card img {
  width: 20px;
@@ -346,4 +342,33 @@ html {
  flex-direction: row-reverse;
 }
 
+.experiences-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* centre horizontalement */
+  justify-content: center;   /* facultatif ici */
+  text-align: center;        /* centre le texte */
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;            /* centre le bloc dans la section */
+}
 
+.experiences-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.experiences-text h3,
+.experiences-text h4,
+.experiences-text p,
+.experiences-text ul {
+  margin: 10px 0;
+}
+
+.experiences-text ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-top: 10px;
+  text-align: left;
+}
