@@ -67,4 +67,20 @@ document.querySelectorAll('.diapo').forEach((diapo, index) => {
     window.addEventListener('resize', updateSlidePosition);
 });
 
+function openModal(type) {
+    document.getElementById(`modal-${type}`).style.display = 'block';
+}
+
+function closeModal(type) {
+    document.getElementById(`modal-${type}`).style.display = 'none';
+}
+
+window.addEventListener('click', function(event) {
+    ['technologique', 'juridique'].forEach(type => {
+        const modal = document.getElementById(`modal-${type}`);
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
 
