@@ -515,3 +515,70 @@ html {
         font-size: 22px;
     }
 }
+
+footer {
+  border-top: 3px solid #ddd;
+  padding: 20px;
+  margin-left: 250px;
+  background-color: rgba(157, 143, 143, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contact-info {
+  text-align: left;
+}
+
+footer .contact-info p {
+  display: flex;
+  align-items: center;
+}
+
+footer .contact-info .icon {
+  width: 2em;
+  height: 2em;
+  margin-right: 10px;
+}
+
+footer .copyright {
+  text-align: center;
+  flex-grow: 1;
+}
+
+footer .social-links {
+  text-align: right;
+}
+
+footer .social-links .icon {
+  width: 5em;
+  height: 5em;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  footer .contact-info,
+  footer .copyright,
+  footer .social-links {
+    margin-bottom: 10px;
+  }
+
+  footer .contact-info .icon {
+    width: 1em;
+    height: 1em;
+  }
+
+  footer .social-links .icon {
+    width: 2em;
+    height: 2em;
+  }
+}
+
