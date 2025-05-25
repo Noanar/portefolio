@@ -68,7 +68,7 @@ html {
     margin: 10px 0;
 }
 
-.contact-btn {
+.contact-btn, .cv-btn {
     padding: 10px 20px;
     font-size: 1.2rem;
     background-color: black;
@@ -77,9 +77,18 @@ html {
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s;
+    margin-bottom: 50px;
+    display: inline-block;
+    width: 180px;
+    text-align: center;
 }
 
 .contact-btn:hover {
+    background-color: gray;
+}
+
+
+.portfolio-btn:hover {
     background-color: gray;
 }
 
