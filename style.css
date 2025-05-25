@@ -533,6 +533,7 @@ footer .contact-info {
 footer .contact-info p {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 footer .contact-info .icon {
